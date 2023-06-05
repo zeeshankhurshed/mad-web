@@ -1,0 +1,894 @@
+/* -----------Generic Classes----------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.sec-space {
+    padding: 40px 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+:root {
+    --green: #539600;
+    --blue: #17294a;
+    --darkblue: #070f28;
+    --white: #ffffff;
+    --black: #000000;
+    --gray: #f2f3f5;
+    --offwhite: #f5deb3;
+}
+
+.custom-ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.l-none {
+    list-style-type: none;
+}
+
+.td-none {
+    text-decoration: none;
+}
+
+.d-none {
+    display: none;
+}
+
+/* ---------------Address Bar----------------- */
+
+.address {
+    background-color: var(--green);
+
+}
+
+.address .address-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.address .address-inner .custom-ul li {
+    padding: 0 1rem;
+}
+
+.address .address-inner .custom-ul li a {
+    color: var(--white);
+    font-size: calc(.5rem + .3vw);
+}
+
+.address .address-inner .custom-ul span {
+    padding: 0 .5rem;
+}
+
+.address .address-inner .location {
+    padding-left: 0;
+}
+
+.address .address-inner .location .regstr {
+    display: none;
+}
+
+/* ------------------Nav Bar----------------- */
+.nav-bar {
+    background-image: url(../assests/hero-image\ 1.gif);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    height: 600px;
+    position: relative;
+    opacity: .9;
+}
+
+.nav-bar .text-wrapper {
+    text-align: center;
+    color: var(--white);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%, -50%);
+}
+
+.nav-bar .text-wrapper p {
+    font-size: calc(.5rem + .2vw);
+}
+
+.nav-bar .text-wrapper h2 {
+    font-size: calc(1rem + 2vw);
+}
+
+.nav-bar .text-wrapper .circle {
+    width: 15px;
+    height: 15px;
+    background-color: var(--white);
+    border: 1px solid transparent;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+}
+
+.circle:after {
+    content: '';
+    display: block;
+    width: 85px;
+    height: 2px;
+    position: absolute;
+    top: 6px;
+    left: 18px;
+    background-color: var(--white);
+}
+
+.circle:before {
+    content: '';
+    display: block;
+    width: 85px;
+    height: 2px;
+    position: absolute;
+    top: 6px;
+    right: 18px;
+    background-color: var(--white);
+}
+
+.nav-bar .nav-bar-wrapper-inner {
+    background-color: var(--darkblue);
+    opacity: .8;
+
+}
+
+.navbar-toggler {
+    background-color: var(--white);
+}
+
+.navbar-wrapper .navbar-inner .navbar .navbar-brand img {
+    width: 100px;
+    height: 100px;
+    opacity: 1;
+
+}
+
+.navbar-wrapper .navbar-inner .navbar .navbar-brand {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--white);
+}
+
+.navbar-wrapper .navbar-inner .navbar-nav {
+    margin: 0 auto;
+    color: var(--white);
+}
+
+.navbar-wrapper .navbar-inner .navbar-nav .nav-link {
+
+    color: var(--white);
+}
+
+.navbar-wrapper .navbar-inner .navbar .navbar-brand span {
+    color: var(--green);
+}
+
+.navbar-wrapper .navbar-inner .search {
+    align-items: center;
+
+    margin-bottom: 0;
+}
+
+.navbar-wrapper .navbar-inner .search .icon-search {
+
+    color: var(--white);
+}
+
+.navbar-wrapper .navbar-inner .search .btn {
+    border: none;
+    padding: 1rem 1.5rem;
+    background-color: var(--green);
+    color: var(--white);
+
+}
+
+.navbar-wrapper .navbar-inner .search .btn .icon-plus {
+    font-size: calc(.4rem + .3vw);
+}
+
+/* ------------ slection-wraper------ */
+
+.selection-wrapper {
+    background-color: var(--gray);
+}
+
+.selection-wrapper-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.form-check {
+    padding-left: 2.5em;
+}
+
+.input-group {
+    width: 58%;
+}
+
+.input-group .form-select {
+    border: none;
+    background-color: var(--white);
+}
+
+.input-group-text {
+    background-color: var(--green);
+    padding: 0.5rem 2rem;
+    color: var(--white);
+}
+
+.selection-wrapper-inner a em {
+    color: var(--green);
+}
+
+.selection-wrapper-inner a span {
+    text-decoration: underline;
+    padding-left: 1rem;
+}
+
+.best-house {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.best-house .card-wrapper {
+    flex: 33.333333%;
+    max-width: 33.333333%;
+    padding: 1rem;
+}
+
+.best-house .card-wrapper .card {
+    position: relative;
+    padding: .5rem;
+    max-height: 100%;
+    border: none;
+}
+
+.best-house .card-wrapper .card img {
+    width: 100%;
+    height: 400px;
+}
+
+.card .btn {
+    position: absolute;
+    top: 2rem;
+    left: 1rem;
+    font-size: calc(.5rem + .2vw);
+}
+
+.card .buy {
+    padding: .3rem 1.5rem;
+    background-color: var(--green);
+    color: var(--white);
+}
+
+.card .rent {
+    padding: .3rem 1.5rem;
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.card .owner-info .man img {
+    width: 40px;
+    height: 40px;
+    border: 1px solid transparent;
+    border-radius: 50%;
+}
+
+.card .owner-info {
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+
+}
+
+.card .owner-info a {
+    text-decoration: none;
+    font-size: calc(.5rem + .5vw);
+
+}
+
+.card .owner-info p {
+    font-size: calc(.3rem + .2vw);
+    padding-right: 5rem;
+    padding-left: 0.5rem;
+
+}
+
+.card .owner-info .icon-heart {
+    color: var(--white);
+
+
+}
+
+.turst-worthy {
+    background-color: var(--gray);
+}
+
+.trust-developer-card {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.trust-developer-card .card-wrapper {
+    flex: 33.333333%;
+    max-width: 33.333333%;
+    padding: 1rem;
+}
+
+.trust-developer-card .card-wrapper .card {
+    position: relative;
+    padding-top: 6rem;
+    max-height: 100%;
+    border: none;
+    background-color: var(--green);
+    height: 500px;
+}
+
+.trust-developer-card .card-wrapper .card:hover {
+    background-color: var(--darkblue);
+    color: var(--white);
+}
+
+.trust-developer-card .card-wrapper .card a {
+    text-decoration: none;
+    font-size: calc(1rem + 5vw);
+    color: var(--white);
+}
+
+.trust-developer-card .card-wrapper .card .duplica .icon-cogs {
+    font-size: calc(10rem + 5vw);
+    opacity: .1;
+}
+
+.trust-developer-card .card-wrapper .card .duplica {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+}
+
+.sec-heading .gray {
+    background-color: var(--gray);
+}
+
+.sec-heading small {
+    color: var(--green);
+}
+
+.sec-heading .rent {
+    background-color: var(--offwhite);
+    padding: .5rem 2rem;
+}
+
+.sec-heading .sell {
+    background-color: var(--green);
+    padding: .5rem 2rem;
+
+}
+
+/* **********************Our Properties**************** */
+.best-house .card .price-wrapper .price-inner a span {
+    background-color: var(--green);
+    color: var(--white);
+    padding: .3rem 1rem;
+    margin-left: 1rem;
+    font-size: calc(.5rem + .2vw);
+}
+
+.best-house .card .price-wrapper .price-inner p span {
+
+    color: var(--green);
+
+}
+
+.card .own {
+    position: absolute;
+    bottom: 18rem;
+    left: 2rem;
+
+
+}
+
+.sec-heading .blue {
+    background-color: var(--darkblue);
+}
+
+/* *************** client-wrapper*********** */
+.client-wrapper-top {
+    background-color: var(--darkblue);
+}
+
+.client-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.client-wrapper .client-inner {
+    flex: 33.333333%;
+    max-width: 33.333333%;
+    padding: 1rem;
+}
+
+.client-wrapper .client-inner .card {
+    padding: .5rem;
+    max-height: 100%;
+    position: relative;
+    border-radius: 30% 0;
+    border: 1px solid var(--gray);
+    background-color: var(--darkblue);
+    color: var(--white);
+    text-align: center;
+}
+
+.client-wrapper .client-inner .card img {
+    width: 150px;
+    height: 150px;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-top: -4rem;
+
+}
+
+.client-wrapper .circle-inner {
+    width: 20px;
+    height: 20px;
+    border: 1px solid gray;
+    border-radius: 50%;
+}
+
+.client-wrapper .circle-inner :hover {
+    background-color: var(--white);
+}
+
+.circle-wrapper {
+    margin: 0 auto;
+}
+
+
+/* ----------------logo-wrapper----------- */
+
+.logo-wrapper {
+    background-color: var(--gray);
+}
+
+.logo-wrapper .logo-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-wrapper .logo-inner img {
+    width: 80px;
+    height: 80px;
+}
+
+/* -------------agent-wrapper---------- */
+.agent .card-inner {
+
+    position: absolute;
+    bottom: 3rem;
+    transform: translateX(50%);
+    right: 11rem;
+}
+
+.agent .card-inner a {
+    width: 20px;
+    height: 20px;
+    background-color: var(--white);
+    border: 1px solid transparent;
+    border-radius: 50%;
+    padding: 1rem;
+}
+
+.agent .card-inner ul li {
+
+    padding: 0 1rem;
+}
+
+.agent .card-inner ul a {
+
+    padding: .5rem;
+}
+
+.agent .card-inner h4 {
+    font-size: calc(.5rem + .5vw);
+}
+
+.agent .card-inner small {
+    display: block;
+    font-size: 50%;
+}
+
+.agent .card-inner .row {
+    justify-content: center;
+}
+
+.agent .card-inner .row i {
+    font-size: calc(.5rem + .5vw);
+}
+
+
+
+/* ---------------------popular-catagories------------------ */
+
+.popular-catagories .popular .card img {
+    height: fit-content
+}
+
+.popular-catagories .popular .card .card-text {
+    position: absolute;
+    top: 3rem;
+    left: 5rem;
+    transform: translateY(50%);
+}
+
+.popular-catagories .popular .card .card-text .by {
+    background-color: var(--green);
+    padding: .3rem 3rem;
+    color: var(--white);
+}
+
+/* ----------------news-feed-------------- */
+.news-feeds .card .price-inner {
+    font-size: calc(.5rem + .3vw);
+}
+
+/* -------------------footer--------------------- */
+.footer {
+    background-color: var(--darkblue);
+}
+
+.footer-inner img {
+    width: 60px;
+    height: 60px;
+}
+
+.footer-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-inner {
+    flex: 33.333333%;
+    max-width: 33.333333%;
+    padding: 1rem;
+}
+
+.footer-inner-context {
+    padding: .5rem;
+    height: 100%;
+    position: relative;
+}
+
+.footer-inner-context .mang {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--white);
+    font-weight: bold;
+}
+
+.footer-inner-context .mang span {
+    color: var(--green);
+}
+
+.footer-inner-context ul {
+    padding: 0;
+}
+
+.footer-inner-context p {
+    font-size: calc(.5rem + .3vw);
+    margin: 0;
+}
+
+.footer-inner-context li {
+    padding: .5rem 0;
+}
+
+.footer-inner-context li a {
+    font-size: calc(.5rem + .3vw);
+}
+
+.footer-inner-context li a span {
+    padding-left: 0 1rem;
+}
+
+.footer-inner-context input {
+    background-color: var(--darkblue);
+    color: var(--gray)
+}
+
+.footer-inner-context .btn {
+    background-color: var(--green);
+    color: var(--white);
+}
+
+.footer-inner-context .s-icons li a {
+    background-color: var(--black);
+    border: 1px solid transparent;
+    padding: 1rem;
+    border-radius: 50%;
+    color: var(--white);
+}
+
+.footer-inner-context .footer {
+    width: 85%;
+}
+
+/* -------------bottom-navwraper-------------- */
+.botom-nav-wrapper i {
+    background-color: var(--green);
+    padding: 1rem;
+}
+
+
+
+
+
+
+
+
+@media(max-width:1200px) {
+    .address .address-inner .custom-ul li {
+        text-align: center;
+    }
+
+    .address .address-inner .custom-ul span {
+        display: block;
+    }
+
+    .address .address-inner .custom-ul .d-none {
+        display: none;
+    }
+
+    .address .address-inner .custom-ul .d-block {
+        display: block;
+    }
+
+    .selection-wrapper-inner {
+        flex-direction: column;
+    }
+
+    .input-group {
+        margin: 2rem 0;
+    }
+
+    .card .owner-info .icon-heart {
+
+        padding-left: 0;
+
+    }
+
+    .agent .card-inner {
+
+        right: 9rem;
+    }
+
+    .agent .card-inner ul li {
+
+        padding: 0 .5rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+@media(max-width:992px) {
+
+    .address .address-inner .custom-ul span {
+        display: none;
+
+    }
+
+    .address .address-inner .custom-ul .regstr {
+        display: none;
+    }
+
+    .address .address-inner .location .regstr {
+        display: block;
+
+    }
+
+    .best-house .card-wrapper {
+        flex: 50%;
+        max-width: 50%;
+    }
+
+    .trust-developer-card .card-wrapper {
+        flex: 50%;
+        max-width: 50%;
+    }
+
+    .client-wrapper .client-inner {
+        flex: 50%;
+        max-width: 50%;
+
+    }
+
+    .client-wrapper .murphy {
+        margin-top: 3rem;
+
+    }
+
+    .circle-wrapper {
+        display: none !important;
+    }
+    .agent .card-inner {
+        right: 11rem;
+    }
+}
+
+
+@media(max-width:768px) {
+
+    .address .address-inner .custom-ul .regstr {
+        display: block;
+    }
+
+    .address .address-inner .location .regstr {
+        display: none;
+
+    }
+
+    .address .address-inner .registration {
+        flex-direction: row-reverse;
+
+    }
+
+    .best-house .card-wrapper {
+        flex: 100%;
+        max-width: 100%;
+
+    }
+
+    .card .owner-info .icon-heart {
+        padding-left: 0;
+    }
+
+    .card .owner-info p {
+
+        padding-right: 14rem;
+
+    }
+
+    .card .own {
+
+        bottom: 18rem;
+
+    }
+
+    .price-wrapper .price-inner {
+        text-align: center;
+    }
+
+    .trust-developer-card .card-wrapper {
+        flex: 100%;
+        max-width: 100%;
+
+    }
+
+
+    .popular-catagories .popular .card .card-text {
+        top: 7rem;
+        left: 10rem;
+
+    }
+
+    .best-house .price-wrapper {
+        text-align: center;
+    }
+
+    .footer-inner {
+        flex: 50%;
+        max-width: 50%;
+
+    }
+
+    .footer-inner-context .ipsm {
+        padding: 1rem !important;
+    }
+
+    .footer-inner-context .footer {
+        margin: 0 auto;
+    }
+    .agent .card-inner {
+        right: 15rem;
+}
+
+}
+
+@media(max-width:576px) {
+    .card .owner-info p {
+
+        padding-right: 5rem;
+
+    }
+
+    .address .address-inner {
+        flex-direction: column;
+
+    }
+
+    .address .address-inner .location {
+        margin-left: 4rem;
+
+    }
+
+    .form-check {
+        padding-left: 2em;
+    }
+
+    .input-group {
+        width: 80%;
+    }
+
+    .input-group-text {
+        padding: 0.5rem 0.5rem;
+
+    }
+
+    .client-wrapper .client-inner {
+        flex: 100%;
+        max-width: 100%;
+
+    }
+
+    .client-wrapper .edward {
+        margin-top: 3rem;
+
+    }
+
+    .logo-wrapper {
+        display: none;
+    }
+
+
+    .popular-catagories .popular .card .card-text {
+        top: 1rem;
+        left: 4rem;
+    }
+    .agent .card-inner {
+        right: 9rem;
+    }
+    .footer-wrapper {
+        text-align: center;
+    }
+
+    .footer-inner {
+        flex: 100%;
+        max-width: 100%;
+
+    }
+
+    .location-inner {
+        justify-content: center;
+    }
+
+    .botom-nav-wrapper .txt {
+        font-size: calc(.5rem + .5vw);
+    }
+
+}
