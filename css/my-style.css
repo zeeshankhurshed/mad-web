@@ -402,7 +402,7 @@
 
 .card .own {
     position: absolute;
-    bottom: 18rem;
+    bottom: 17rem;
     left: 2rem;
 
 
@@ -484,6 +484,10 @@
 }
 
 /* -------------agent-wrapper---------- */
+.agent .card-wrapper .card img{
+    width: 300px;
+    height: 400px;
+}
 .agent .card-inner {
 
     position: absolute;
@@ -688,6 +692,9 @@
 
         padding: 0 .5rem;
     }
+    .card .own {
+        bottom: 19rem;
+     }
 }
 
 
@@ -741,6 +748,10 @@
     .agent .card-inner {
         right: 11rem;
     }
+    .card .own {
+        bottom: 17rem;
+     
+}
      
 }
 
@@ -761,11 +772,7 @@
 
     }
 
-    .best-house .card-wrapper {
-        flex: 100%;
-        max-width: 100%;
-
-    }
+ 
 
     .card .owner-info .icon-heart {
         padding-left: 0;
@@ -773,7 +780,7 @@
 
     .card .owner-info p {
 
-        padding-right: 14rem;
+        padding-right: 3rem;
 
     }
 
@@ -787,11 +794,6 @@
         text-align: start;
     }
 
-    .trust-developer-card .card-wrapper {
-        flex: 100%;
-        max-width: 100%;
-
-    }
     .popular-catagories .popular .card .card-text {
         top: 7rem;
         left: 10rem;
@@ -805,7 +807,13 @@
     .best-house .price-wrapper {
         text-align: center;
     }
-
+    .agent .card-inner {
+        right: 15rem;
+}
+.card .own {
+    bottom: 20rem;
+ 
+}
     .footer-inner {
         flex: 50%;
         max-width: 50%;
@@ -819,9 +827,7 @@
     .footer-inner-context .footer {
         margin: 0 auto;
     }
-    .agent .card-inner {
-        right: 15rem;
-}
+
 
 }
 
@@ -841,6 +847,10 @@
         font-size: calc(.8rem + .3vw);
     }
    
+.best-house .card-wrapper {
+    flex: 100%;
+    max-width: 100%;
+}
     .card .owner-info p {
 
         padding-right: 4rem;
@@ -873,6 +883,11 @@
     .logo-wrapper {
         display: none;
     }
+
+.trust-developer-card .card-wrapper {
+    flex: 100%;
+    max-width: 100%;
+}
     .trust-developer-card .card-wrapper .card {
        
         padding: 6rem 1rem;
@@ -891,18 +906,23 @@
    padding: 0.2rem 1rem;
  }
 .agent .card-inner {
-    right: 9rem;
-    top: 8rem;
+ right: 6rem;
+    top: 14rem;
+
 }
     .agent .card-inner .phone {
         padding: .5rem;
-        margin-left: 2rem;
+        margin-left: 0;
     }
     .agent .card-inner ul {
       margin-top: 1rem;
     }
-    .agent .card-inner h4 {
+    /* .agent .card-inner h4 {
 display: none;
+    } */
+    .card .own {
+        bottom: 17rem;
+     
     }
     .footer-wrapper {
         text-align: center;
