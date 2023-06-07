@@ -89,6 +89,7 @@
     height: 600px;
     position: relative;
     opacity: .9;
+  
 }
 
 .nav-bar .text-wrapper {
@@ -98,7 +99,7 @@
     top: 50%;
     left: 0;
     right: 0;
-    transform: translateY(-50%, -50%);
+    /* transform: translate(-50%, -50%); */
 }
 
 .nav-bar .text-wrapper p {
@@ -143,8 +144,9 @@
 
 .nav-bar .nav-bar-wrapper-inner {
     background-color: var(--darkblue);
-    opacity: .8;
-
+    opacity: .9;
+    position: inherit;
+    z-index: 1;
 }
 
 .navbar-toggler {
@@ -262,7 +264,7 @@
 
 .best-house .card-wrapper .card img {
     width: 100%;
-    height: 400px;
+    height: 200px;
 }
 
 .card .btn {
@@ -335,7 +337,7 @@
 
 .trust-developer-card .card-wrapper .card {
     position: relative;
-    padding-top: 6rem;
+    padding: 6rem 1rem;
     max-height: 100%;
     border: none;
     background-color: var(--green);
@@ -739,6 +741,7 @@
     .agent .card-inner {
         right: 11rem;
     }
+     
 }
 
 
@@ -781,7 +784,7 @@
     }
 
     .price-wrapper .price-inner {
-        text-align: center;
+        text-align: start;
     }
 
     .trust-developer-card .card-wrapper {
@@ -789,12 +792,14 @@
         max-width: 100%;
 
     }
-
-
     .popular-catagories .popular .card .card-text {
         top: 7rem;
         left: 10rem;
 
+    }
+    .popular-catagories .popular .card-wrapper {
+      flex: 50%;
+      max-width: 50%;
     }
 
     .best-house .price-wrapper {
@@ -821,22 +826,26 @@
 }
 
 @media(max-width:576px) {
-    .card .owner-info p {
-
-        padding-right: 5rem;
-
-    }
-
-    .address .address-inner {
+     .address .address-inner {
         flex-direction: column;
-
     }
-
     .address .address-inner .location {
         margin-left: 4rem;
+        margin-top: 1rem;
+    }
+    .address .address-inner .registration {
+     margin-left: -2rem;
+    }
+    .address .address-inner .custom-ul li a {
+     
+        font-size: calc(.8rem + .3vw);
+    }
+   
+    .card .owner-info p {
+
+        padding-right: 4rem;
 
     }
-
     .form-check {
         padding-left: 2em;
     }
@@ -864,14 +873,36 @@
     .logo-wrapper {
         display: none;
     }
-
+    .trust-developer-card .card-wrapper .card {
+       
+        padding: 6rem 1rem;
+        height: 400px;
+    }
 
     .popular-catagories .popular .card .card-text {
-        top: 1rem;
-        left: 4rem;
+        top: -.5rem;
+        left: 1.5rem;
     }
-    .agent .card-inner {
-        right: 9rem;
+    .popular-catagories .popular .card .card-text h5 {
+        color: var(--black)!important;
+  font-size: .5rem;
+    }
+.popular-catagories .popular .card .card-text .by {
+   padding: 0.2rem 1rem;
+ }
+.agent .card-inner {
+    right: 9rem;
+    top: 8rem;
+}
+    .agent .card-inner .phone {
+        padding: .5rem;
+        margin-left: 2rem;
+    }
+    .agent .card-inner ul {
+      margin-top: 1rem;
+    }
+    .agent .card-inner h4 {
+display: none;
     }
     .footer-wrapper {
         text-align: center;
@@ -880,8 +911,9 @@
     .footer-inner {
         flex: 100%;
         max-width: 100%;
-
+        padding: 0;
     }
+
 
     .location-inner {
         justify-content: center;
